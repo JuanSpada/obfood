@@ -18,5 +18,5 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/perfil', 'PerfilController@perfil');
+Route::get('/perfil', 'PerfilController@perfil')->middleware('checkRole:admin');
 Route::post('/perfil', 'PerfilController@update_usuario');
