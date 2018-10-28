@@ -1,0 +1,244 @@
+/*Media Query Celular -MOBILE FIRST-*/
+body{/*ASÍ NOS MOSTRO FRAN EN EL COLEARNING PARA BAJAR EL FOOTER SIEMPRE */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    min-width: 350px;
+  }
+  
+  /*Empizan Estilos del Footer*/
+  footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-footer{
+    display: none;
+  }
+  footer>section{
+    background-color: rgba(59, 58, 58, 0.88);
+    padding: 10px 0px 10px 0px;
+  }
+  footer>section:nth-child(2){
+    background-color: rgba(59, 58, 58, 0.98);
+    padding: 10px 0px 10px 0px;
+  }
+  footer>section>article>p{
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: 0.8em;
+  }
+  footer>section>article>h3{
+    text-align: center;
+    color: white;
+    font-size: 1em;
+  }
+  footer>section>article>ul{
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    }
+  .footer-redes>ul>li{
+    padding: 0px 3px 0px 3px;
+    list-style: none;
+  }
+  .footer-redes>ul>li>a{
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  .footer-redes>ul>li>a>img{
+    width: 15px;
+  }
+  /*Terminan Estilos del Footer*/
+  
+  /*Empizan Estilos del FAQ*/
+  .faq>h1{
+    padding-top: 10px;
+    text-align: center;
+  }
+  .faq>section>article{
+    padding: 15px;
+  }
+  .faq>section>article>h3{
+    text-align: center;
+  }
+  .faq>section:nth-child(odd){
+    background-color: #52515117;
+  }
+  /*Terminan Estilos del FAQ*/
+  
+  /*Empizan Estilos de perfil.php*/
+  
+  .nav-perfil{
+    background-color: #d4d4d4;
+    height: 400px;
+    display: flex;
+  
+    align-items: center;
+  }
+  
+  
+  .nav-perfil ul{
+    list-style: none;
+    width: 100%;
+  }
+  
+  .nav-perfil ul li{
+    height: 50px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-perfil ul a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    width:100%;
+  }
+  
+  .profile-content{
+    margin: 30px;
+  }
+  .file-form {
+    margin: 1em 0;
+  }
+  .file img {
+    width: 100%;
+    margin-top: 0.5em;
+    border-radius: 10px;
+  }
+  
+  .profile-content article img{
+    max-width:100px;
+    height:auto;
+  }
+  
+  .profile-content article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-content article form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /*Terminan Estilos de perfil.php*/
+  
+  /*Media Query Ipad's*/
+  @media (min-width:760px){
+    .faq>section>article>p{
+      max-width: 85vw;
+    }
+    .faq>section>article{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    /*Empizan Estilos de perfil.php*/
+    .profile{
+      display: flex;
+    }
+    #side-navbar{
+      display: none;
+    }
+  
+    .nav-perfil{
+      display: inline;
+      height: 80vh;
+      width: 150px;
+    }
+  
+    .nav-perfil ul{
+      margin-top: 90px;
+    }
+  
+    .profile-content{
+      margin: 100px;
+      display: flex;
+      align-items: center;
+    }
+  
+    .profile-content article{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    /*Terminan Estilos de perfil.php*/
+  }
+  
+  /*Media Query Desktop's*/
+  @media (min-width:1025px){
+    /*Empizan Estilos del Footer*/
+    footer>section{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+    footer>section>article>p{
+      font-size: 1em;
+      margin: 6px 0;
+    }
+    #side-navbar{
+      display: none;
+    }
+    .nav-footer{
+      display: inline;
+    }
+    .nav-footer>ul>li{
+      list-style: none;
+      margin: 1.5px 0;
+    }
+    .nav-footer>ul>li>a{
+      color: white;
+      text-decoration: none;
+  
+    }
+    .nav-footer>ul>li>a:hover{
+      color: rgba(104, 181, 77, 0.84);
+      transition: 0.3s;
+    }
+    footer>section>article:nth-child(1)>ul{
+      flex-direction: column;
+    }
+    .footer-redes>ul{
+      margin: 8px 0;
+    }
+    .footer-redes>ul>li>a>img{
+    width: 25px;
+    margin: 0 4px;
+    }
+    .footer-redes>ul>li>a>img:hover{
+      transform: scale(1.3);
+      transition: 0.3s;
+    }
+    /*Terminan Estilos del Footer*/
+    /*Empizan Estilos del FAQ*/
+    .faq>h1{
+      font-size: 1.8em;
+      margin:6vh 0 2vh 0;
+      padding: 0;
+      color: rgb(85, 85, 85);
+    }
+    .faq>section>article h3{
+      margin-bottom: 2vh;
+    }
+    .faq>section>article>p{
+      width: 65vw;
+    }
+    .faq>section>article{
+      padding: 25px 0;
+    }
+    /*Terminan Estilos del FAQ*/
+  }

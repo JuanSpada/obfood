@@ -1,0 +1,263 @@
+/*
+
+//////////// ESTILO PARA LOS FORMS //////////
+
+*/
+.container{
+    border: solid 1px #ddd;
+    box-shadow: 0 0 10px #ddd;
+    background-color: white;
+    padding: 35px 15px;
+  
+  }
+  
+  .container h3{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0% auto 5%;
+  }
+  
+  .form-input {
+    color: #495057;
+    margin: 3% 0% 5%;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    padding: .8rem;
+  }
+  
+  .form-row {
+    display: block;
+    width: 100%;
+  
+  }
+  
+  .form-button {
+  
+    margin: 0 auto;
+    margin-top: 30px;
+    background: #FF7519;
+    color: #FFF;
+    border-color: #FF7519;
+    border-radius: 3px;
+    cursor: pointer;
+    height: calc(2.25rem + 2px);
+    font-size: 1em;
+    max-width: 280px;
+  }
+  .form-button:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+  }
+  
+  .container a{
+    float: right;
+    text-decoration: none;
+    color: #888;
+    font-style: oblique;
+    font-size: 0.95em;;
+  }
+  
+  .login form a:hover{
+    color: rgb(252, 191, 71);
+    transition: 0.15s;
+  }
+  
+  .login-extern{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 20% 5%;
+  }
+  .login-extern img{
+    height: 40px;
+  }
+  .container label{
+    /* color: #666; */
+    font-weight: 500;
+  }
+  
+  .container p{
+    font-size: 0.8em;
+    color: #A9B1B7;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  
+  /*
+  
+  //////////// ESTILO PARA EL LOGIN //////////
+  
+  */
+  .login{
+    float: right;
+    margin: 3% 5%;
+    width: 400px;
+  }
+  
+  .login-back{
+    background-image: url(storage/img/registro.jpg);
+    background-size: cover;
+    display: flex;
+  
+  }
+  
+  .back-blur{
+    background-image: linear-gradient(180deg,rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.6), rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.2));
+    width: 100%;
+  }
+  /*
+  
+  //////////// ESTILO PARA EL REGISTRO //////////
+  
+  */
+  .main-registro{
+    margin: 0 auto;
+  }
+  .signin-back{
+    background-image: url(storage/img/registro1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+  }
+  
+  
+  .signin{
+    margin: 3% auto;
+    width: 600px;
+  }
+  
+  .signin-form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .signin-group-form{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+  }
+  form .error-container{
+  background-color: rgba(255, 160, 96, 0.534);
+  border: 2px solid rgba(255, 136, 56, 0.822);
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px rgba(128, 128, 128, 0.8);
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 2.2vh;
+  justify-content: center;
+  padding: 8px;
+  }
+  form .error-container {
+    color: rgb(75, 75, 75);
+    font-size: 0.9em;
+  }
+  
+  form .error-container i{
+    margin-right: 4px;
+    color: rgb(255, 116, 36);
+  }
+  .politics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .politics .tyc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .politics label{
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+  }
+  .politics label a{
+    margin-left: 4px;
+  }
+  .politics input{
+    margin-right: 0.2em;
+  }
+  /*
+  
+  //////////// STYLE DE CONTACTO //////////
+  
+  */
+  
+  .contact-header{
+    background-image: url(storage/img/registro3.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 50vh;
+  }
+  .contact-header h2{
+    /* margin: 3%; */
+    color: white;
+    color: white;
+    position: absolute;
+    top: 50vh;
+    left: 5%;
+  }
+  .contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 3%;
+  }
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form .form-input{
+    margin: 0.7em;
+  }
+  textarea#mensaje {
+    font-family: inherit;
+  }
+  
+  .info{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+  
+  .info i{
+    margin-right: 1em;
+  }
+  /*
+  
+  //////////// RESPONSIVE //////////
+  
+  */
+  @media (max-width: 620px){
+    .login{
+        float: none;
+        width: auto;
+    }
+  
+    .signin {
+        width: auto;
+        margin: 5%;
+    }
+  
+    .signin-group-form {
+        width: 100%;
+    }
+  
+  }
+  @media (max-width: 750px){
+    .contact-container{
+      display: block;
+      
+  }
+  
+    .contact-info{
+      text-align: center;
+      margin: 20px;
+    }
+    .contact-header h2 {
+      top: 0;
+  }
+  }
+  
+  
+  
