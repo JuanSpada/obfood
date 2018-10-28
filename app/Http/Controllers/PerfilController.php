@@ -22,7 +22,8 @@ class PerfilController extends Controller
 
         $user = Auth::user();
         
-            $user->name = $request->input('name');
+            $user->nombre = $request->input('nombre');
+            $user->apellido = $request->input('apellido');
             $user->email = $request->input('email');
             $user->direccion = $request->input('direccion'); 
             $user->postal = $request->input('postal');
@@ -35,8 +36,6 @@ class PerfilController extends Controller
             return back()->with('success','You have successfully upload image.');
         }
         
-        // @dd($request);
-        // @dd($user);
         $user->save();
         
 

@@ -20,8 +20,8 @@
         <nav>
         <ul class="nav-principal"><!--Nav principal es el de la izq-->
             <li><a href="/">Home</a></li>
-            <li><a href="/quienes-somos">¿Quienes Somos?</a></li>
-            <li><a href="/productos">Productos</a></li>
+            <li><a href="/">¿Quienes Somos?</a></li>
+            <li><a href="/">Productos</a></li>
             <li><a href="/faq">Ayuda</a></li>
             <li><a href="/contacto">Contacto</a></li>
         </ul>
