@@ -17,7 +17,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/perfil', 'PerfilController@perfil')->middleware('checkRole:admin');
+Route::get('/perfil', 'PerfilController@perfil');
 Route::post('/perfil', 'PerfilController@update_usuario');
-
 Route::get('/register', 'LinkController@registro');
+Route::get('/contacto', 'LinkController@contacto');
+Route::get('/faq', 'LinkController@faq');
+
