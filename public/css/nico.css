@@ -272,7 +272,7 @@
       display: none;
     }
     .banner{
-      background-image: url(/public/storage/img/banner3.jpeg);
+      background-image: url(../storage/img/banner3.jpeg);
       background-size: cover;
       background-position: center;
       height: 560px;

@@ -94,7 +94,7 @@
   }
   
   .login-back{
-    background-image: url(storage/img/registro.jpg);
+    background-image: url(../storage/img/registro.jpeg);
     background-size: cover;
     display: flex;
   
@@ -113,7 +113,7 @@
     margin: 0 auto;
   }
   .signin-back{
-    background-image: url(storage/img/registro1.jpg);
+    background-image: url(../storage/img/registro1.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -183,7 +183,7 @@
   */
   
   .contact-header{
-    background-image: url(storage/img/registro3.jpeg);
+    background-image: url(../storage/img/registro3.jpeg);
     background-size: cover;
     background-position: center;
     display: flex;
